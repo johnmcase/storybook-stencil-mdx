@@ -1,4 +1,4 @@
-import { setStencilDocJson } from '@pxtrn/storybook-addon-docs-stencil';
+import { extractArgTypes, extractComponentDescription, setStencilDocJson } from '@pxtrn/storybook-addon-docs-stencil';
 import docJson from '../docs/docs.json';
 import { defineCustomElements } from '../loader';
 
@@ -14,4 +14,8 @@ export const parameters = {
     },
     hideNoControlsWarning: true
   },
+  docs: {
+    extractArgTypes,
+    extractComponentDescription,
+  }
 }
